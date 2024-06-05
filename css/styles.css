@@ -159,14 +159,14 @@ sup {
 }
 
 a {
-  color: #bd5d38;
-  text-decoration: none;
-  background-color: transparent;
+    color: #a3b18a;
+    text-decoration: none;
+    background-color: transparent;
 }
-a:hover {
-  color: #824027;
-  text-decoration: underline;
-}
+    a:hover {
+        color: #588157;
+        text-decoration: underline;
+    }
 
 a:not([href]) {
   color: inherit;
@@ -503,9 +503,9 @@ mark,
 }
 
 code {
-  font-size: 87.5%;
-  color: #e83e8c;
-  word-wrap: break-word;
+    font-size: 87.5%;
+    color: #dda15e;
+    word-wrap: break-word;
 }
 a > code {
   color: inherit;
@@ -1737,20 +1737,20 @@ pre code {
 .table-primary > td {
   background-color: #edd2c7;
 }
-.table-primary th,
-.table-primary td,
-.table-primary thead th,
-.table-primary tbody + tbody {
-  border-color: #ddab98;
-}
+    .table-primary th,
+    .table-primary td,
+    .table-primary thead th,
+    .table-primary tbody + tbody {
+        border-color: #dad7cd;
+    }
 
 .table-hover .table-primary:hover {
-  background-color: #e7c2b4;
+    background-color: #dad7cd;
 }
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
-  background-color: #e7c2b4;
-}
+    .table-hover .table-primary:hover > td,
+    .table-hover .table-primary:hover > th {
+        background-color: #dad7cd;
+    }
 
 .table-secondary,
 .table-secondary > th,
@@ -1775,22 +1775,22 @@ pre code {
 .table-success,
 .table-success > th,
 .table-success > td {
-  background-color: #c3e6cb;
+    background-color: #dda15e;
 }
-.table-success th,
-.table-success td,
-.table-success thead th,
-.table-success tbody + tbody {
-  border-color: #8fd19e;
-}
+    .table-success th,
+    .table-success td,
+    .table-success thead th,
+    .table-success tbody + tbody {
+        border-color: #bc6c25;
+    }
 
 .table-hover .table-success:hover {
-  background-color: #b1dfbb;
+    background-color: #faedcd;
 }
-.table-hover .table-success:hover > td,
-.table-hover .table-success:hover > th {
-  background-color: #b1dfbb;
-}
+    .table-hover .table-success:hover > td,
+    .table-hover .table-success:hover > th {
+        background-color: #faedcd;
+    }
 
 .table-info,
 .table-info > th,
