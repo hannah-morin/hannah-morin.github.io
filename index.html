@@ -3,9 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title> UNDER CONSTRUCTION Hannah Morin</title>
+    <meta name="description" content="Hannah Morin — joint PhD at Carnegie Mellon in Engineering and Public Policy and Materials Science. Research on lithium-ion battery degradation, electric vehicle fast charging, energy storage, and decarbonization policy." />
+    <meta name="author" content="Hannah Morin" />
+    <!-- Open Graph / Twitter Card for social link previews -->
+    <meta property="og:title" content="Hannah Morin" />
+    <meta property="og:description" content="Joint PhD at Carnegie Mellon. Battery degradation, electric vehicles, energy storage, decarbonization policy." />
+    <meta property="og:image" content="https://hannah-morin.github.io/assets/img/22-headshot-bw.jpg" />
+    <meta property="og:url" content="https://hannah-morin.github.io" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hannah Morin" />
+    <meta name="twitter:description" content="Joint PhD at Carnegie Mellon. Battery degradation, electric vehicles, energy storage, decarbonization policy." />
+    <meta name="twitter:image" content="https://hannah-morin.github.io/assets/img/22-headshot-bw.jpg" />
+    <title>Hannah Morin</title>
+    <!-- Favicon: sage-green HM initials -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -13,26 +25,185 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <script defer data-domain="hannah-morin.github.io" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <!-- Additional styles for new card-grid sections. Kept here so styles.css is untouched. -->
+    <style>
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+        .grid-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-card .card-thumb {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            background-color: #f1efe7;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            margin-bottom: 0.85rem;
+        }
+        .grid-card .card-title {
+            font-family: "Saira Extra Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.15;
+            color: #343a40;
+            margin-bottom: 0.35rem;
+        }
+        .grid-card .card-subtitle {
+            font-size: 0.95rem;
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 0.4rem;
+        }
+        .grid-card .card-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 0.4rem;
+        }
+        .grid-card .card-desc {
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.45;
+        }
+        .grid-card .card-desc a { word-break: break-word; }
+        .subsection-heading {
+            font-family: "Saira Extra Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: #588157;
+            letter-spacing: 0.04rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .service-block {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+        .service-block img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            background-color: #f1efe7;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .service-block ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: #495057;
+        }
+        .service-block ul li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        .service-block .svc-meta {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        @media (max-width: 575.98px) {
+            .service-block {
+                grid-template-columns: 1fr;
+            }
+        }
+        .talks-photos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .talks-photos img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            background-color: #f1efe7;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        @media (max-width: 575.98px) {
+            .talks-photos {
+                grid-template-columns: 1fr;
+            }
+        }
+        .looking-for {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            padding: 0.85rem 1.1rem;
+            border-left: 4px solid #588157;
+            background-color: #f6f4ed;
+            border-radius: 0 0.35rem 0.35rem 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .looking-for .lf-tag {
+            display: inline-block;
+            background-color: #588157;
+            color: #fff;
+            font-family: "Saira Extra Condensed", sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            font-size: 0.9rem;
+            padding: 0.15rem 0.55rem;
+            border-radius: 0.25rem;
+            white-space: nowrap;
+        }
+        .looking-for .lf-text {
+            flex: 1;
+            color: #343a40;
+            min-width: 250px;
+        }
+        .looking-for .lf-text a {
+            font-weight: 700;
+        }
+        .pub-finding {
+            margin-top: 0.6rem;
+            padding: 0.6rem 0.85rem;
+            background-color: #f6f4ed;
+            border-left: 3px solid #588157;
+            border-radius: 0 0.25rem 0.25rem 0;
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.5;
+        }
+        .pub-finding b {
+            color: #588157;
+            text-transform: uppercase;
+            letter-spacing: 0.04rem;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none"> (Under Contruction)Hannah Morin</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/hmorinprofile.png" alt="" /></span>
+            <span class="d-block d-lg-none">Hannah Morin</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/22-headshot-bw.jpg" alt="Hannah Morin profile photo" /></span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+                        <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#media">Media</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#advising">Teaching &amp; Advising</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#affiliations">Community &amp; Service</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#more">More</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#writing">Writing</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobbies">Outside the Lab</a></li>
             </ul>
         </div>
     </nav>
@@ -45,385 +216,429 @@
                 <h1 class="mb-0">
                     Hannah Morin
                 </h1>
-                <div class="subheading mb-5">
-                    Carnegie Mellon University · Pittsburgh, Pennsylvania ·
-                    <span class="text-primary">hmorin at andrew dot cmu dot edu</span>
+                <div class="subheading mb-3">
+                    Carnegie Mellon University · Pittsburgh, Pennsylvania
                 </div>
-                <p class="lead mb-5">
-                    Hannah is a  PhD student joint across Engineering and Public Policy and Materials Science and Engineering. 
-                    She is advised by Professor Jay Whitacre and Professor Jeremy Michalek. Her research investigates the intersection between battery technology and policy, exploring the relationship between electrochemical properties, economics, and human behavior. 
-                    This includes understanding the impacts of uncertainty in lithium ion battery degradation on fast-charging EV battery degradation costs, economic viability of vehicle-to-home and battery second life (reuse). Both experimental and computational methods are utilized. 
-                    More broadly, Hannah is interested exploring electrochemical direct air capture, battery recycling, grid-scale battery market design and vehicle-to-grid policy and technology. When not conducting research, Hannah can be found reading fiction, exploring coffee shops, or taking full advantage of CMUs free museum access. 
+
+                <div class="looking-for mb-5">
+                    <span class="lf-tag">Graduating December 2026</span>
+                    <span class="lf-text">Exploring roles in battery R&amp;D, energy storage, and decarbonization policy at companies, labs, and think tanks working on electrification and the grid. If you have an opportunity that might be a fit, <a href="#" class="js-email-link">please get in touch</a>.</span>
+                </div>
+
+                <p class="lead mb-4">
+                    I quantify how electric vehicle batteries actually degrade — and what that costs drivers, automakers, and the grid.
                 </p>
 
-                <p class="lead mb-5">Please find my C.V. <a href="assets/files/H_Morin_CV.pdf" target="-blank">here</a>.</p>
-                <p class="lead mb-5" style="margin-bottom:8px!important;">
-                    Recent updates:
-                    <ul class="lead mb-5" style="font-size:1.15rem;">
-                        <li>Something 1 </li>
-                        <li>Something 2: <a href="https://substack.com/">substack.com</a>.</li>
-                        <li>Something 3.</li>
-                    </ul>
+                <p class="lead mb-5">
+                    My PhD work — <i>From Particle to Pack to Policy</i> — spans the cell (experiments in the lab), the pack (techno-economic models), and the policy (what regulators and utilities should do about it). I'm a joint PhD across Carnegie Mellon's <a href="https://www.cmu.edu/epp/" target="_blank">Engineering and Public Policy</a> and <a href="https://www.cmu.edu/engineering/materials/" target="_blank">Materials Science and Engineering</a> departments, advised by Prof. Jay Whitacre and Prof. Jeremy Michalek. Sloan Transportation Fellow; recognized with the best PhD Qualifying Paper award in my cohort (Toor Award, 2023).
                 </p>
+
+                <p class="lead mb-5" style="font-size: 1.1rem;">
+                    <b style="color:#588157;">For technical roles</b> I bring applied battery research that spans the lab bench and the spreadsheet — comfortable with messy real-world data and the questions the literature hasn't answered yet. <b style="color:#588157;">For policy roles</b> I bring translation: most battery PhDs can't sit in a regulator's office, and most policy people can't read a coin cell datasheet. I do both.
+                </p>
+
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/24-gsa-strategic-plan.jpg" alt="Leadership" />
+                        <div class="card-title">Leadership at Scale</div>
+                        <div class="card-desc">As CMU Graduate Student Assembly President I led a team of 8 with a ~$1M annual budget representing 7,000 grad students. Negotiated with senior university leadership, raised the minimum PhD stipend, and built the Doctoral Stipend Annual Review Committee.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/20-lab-coat-battery.jpg" alt="Experimental electrochemistry" />
+                        <div class="card-title">Hands-On Electrochemistry</div>
+                        <div class="card-desc">I run cycling experiments on commercial cells and pouch cells across NCA, NMC, and LFP chemistries using Neware, Biologic, and MACCOR cyclers. I read EIS, ICA, XRD, and SEM data and know what's signal versus noise.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/17-poster-presenting.jpg" alt="Techno-economic modeling" />
+                        <div class="card-title">Techno-Economic Modeling</div>
+                        <div class="card-desc">I build degradation cost models that propagate experimental uncertainty all the way to the consumer's wallet — used to compare chemistries, charging behaviors, and business cases for V2X and second-life batteries.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/09-gsa-congress-visit.jpg" alt="Policy and advocacy" />
+                        <div class="card-title">Policy &amp; Advocacy</div>
+                        <div class="card-desc">My V2G work with the NJ Department of Environmental Protection and my advocacy work through GSA — including congressional meetings, op-eds, and a Forbes feature — built the muscle of explaining technical questions to people with decision-making power.</div>
+                    </div>
+
+                </div>
+
+                <p class="lead mb-5">
+                    <a href="assets/files/H_Morin_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i>&nbsp; Download CV</a> &nbsp;·&nbsp;
+                    <a href="#" class="js-email-link"><i class="fas fa-envelope"></i>&nbsp; <span class="js-email-text">[email visible after load]</span></a>
+                </p>
+
                 <div class="social-icons">
-                    <a class="social-icon" title="LinkedIn" href="https://www.linkedin.com/in/hannahmorin-2705/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" title="Google Scholar" href="https://scholar.google.com/citations?hl=en&user=MLK0lRoAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
+                    <a class="social-icon" title="LinkedIn" href="https://www.linkedin.com/in/hhmorin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" title="Google Scholar" href="https://scholar.google.com/citations?user=MLK0lRoAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a>
+                    <a class="social-icon" title="GitHub" href="https://github.com/hannah-morin" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>
         <hr class="m-0" />
 
-
-
-
-        <!-- Publications -->
         <section class="resume-section" id="research">
             <div class="resume-section-content">
                 <h2 class="mb-5">Research</h2>
-                <p>To see my research experiences, click <a href="#experience">here</a>.</p>
 
-                <br>
+                <h3 class="mb-3">Publications</h3>
 
-                <h3 class="mb-3">Publications and Pre-prints</h3>
+                <p>*First-author contribution.</p>
 
-                *First-author contribution.
-                <p></p>
                 <ol reversed class="fa-ol mb-0">
-                    <li style="margin: 0 0 1em 0;">
-                        <b>H.R. Morin *</b> Jay Whitacre, and Jeremy Michalek*.
-                        "Electric Vehicle Pack Replacement Costs: LFP Outperforms NCA and NMC When Mixing Fast and Slow Charging for Abusive Accelerated Aging Studies"
-                        <i>Please email for draft</i>. 2024.
+                    <li style="margin: 0 0 1.5em 0;">
+                        <b>H.R. Morin*</b>, Jay Whitacre, and Jeremy Michalek.
+                        "Quantifying the degradation cost of frequent fast charging across multiple electric vehicle battery chemistries."
+                        <i>Journal of Power Sources</i>, 652 (2025): 237552.
+                        <div class="pub-finding"><b>Finding:</b> Across realistic mixed fast-and-slow charging behavior, LFP cells outperform NCA and NMC on lifetime battery replacement cost — with direct implications for EV chemistry choice, fleet electrification, and warranty design.</div>
                     </li>
 
-                    <li style="margin: 0 0 1em 0;">
-                        <b> H.R. Morin*</b> Donald G Graczyk, Yifen Tsai, Susan Lopykinski, Hakim Iddir, Juan C Garcia, Nancy Dietz Rago, Stephen Trask, LeRoy Flores, Seoung-Bum Son, Zhengcheng Zhang, Noah M Johnson, and Ira Bloom.
-                        "<a href="assets/files/morin-et-al-2020-transition-metal-dissolution-from-nmc-family-oxides-a-case-study.pdf" target="-blank" class="plausible-event-name=TrustPaper">
+                    <li style="margin: 0 0 1.5em 0;">
+                        <b>H.R. Morin*</b>, Donald G Graczyk, Yifen Tsai, Susan Lopykinski, Hakim Iddir, Juan C Garcia, Nancy Dietz Rago, Stephen Trask, LeRoy Flores, Seoung-Bum Son, Zhengcheng Zhang, Noah M Johnson, and Ira Bloom.
+                        "<a href="assets/files/morin-et-al-2020-transition-metal-dissolution-from-nmc-family-oxides-a-case-study.pdf" target="_blank">
                             Transition-metal dissolution from NMC-family oxides: a case study
                         </a>."
-                        ACS Applied Energy Materials, 2020.
+                        <i>ACS Applied Energy Materials</i>, 2020.
+                        <div class="pub-finding"><b>Finding:</b> Quantified how transition metals leach out of NMC cathodes at high voltage and characterized the resulting electrolyte decomposition — a degradation mechanism that constrains how aggressively NMC cells can be cycled.</div>
                     </li>
-
                 </ol>
 
                 <hr class="m-4" />
 
-                <h3 class="mb-3">Selected Recent Talks</h3>
+                <h3 class="mb-3">Select Talks</h3>
+
+                <div class="talks-photos">
+                    <img src="assets/img/23-poster-win-certificate.jpg" alt="First Place at CMU Energy Student Poster Competition (2023)" />
+                    <img src="assets/img/12-eesat-prof-friend.jpg" alt="At EESAT 2026 conference" />
+                </div>
 
                 <ul class="fa-ul mb-0">
+                    <li style="margin: 0 0 1em 0;"><b>Insights on Lithium-Ion Battery Degradation for Energy Storage Modeling</b> — Presented at the Carnegie Mellon Electricity Industry Center Advisory Meeting (received highest audience rating). Oct 17 2024; Pittsburgh PA</li>
 
-                    <li style="margin: 0 0 1em 0;"><b>How Much Does Electric Vehicle Degradation from Fast Charging Cost?</b> - Poster presented at the Transportation Research Board Conference hosted by the National Academy of Science and Engineering. Jan 10 2024; Washington DC</li>
+                    <li style="margin: 0 0 1em 0;"><b>Electric Vehicle Battery Degradation: Effects of Mixed Fast and Slow Charging on Commercial NCA Cells</b> — Poster presented at the Electrochemical Society PRiME Conference. Oct 8 2024; Honolulu HI</li>
 
-                    <li style="margin: 0 0 1em 0;"><b>Battered by Chemistry: Electric Vehicle Battery Replacement Costs Under Diverse Fast Charging Scenarios</b> - Poster presented at the United States Association for Energy Economics. 2024; Chicago IL</li>
+                    <li style="margin: 0 0 1em 0;"><b>How Much Does Electric Vehicle Degradation from Fast Charging Cost?</b> — Poster presented at the Transportation Research Board Conference hosted by the National Academy of Science and Engineering. Jan 10 2024; Washington DC</li>
 
-                    <li style="margin: 0 0 1em 0;"><b>Electric Vehicle Battery Replacement Costs Under Realistic Fast Charging Behaviors</b> - Poster presented at the Electrochemical Society. 2023; Boston MA</li>
+                    <li style="margin: 0 0 1em 0;"><b>Vehicle to Grid</b> — Presented at the NEDC Partner Meeting (EPA organized) on behalf of the New Jersey Department of Environmental Protection. Oct 20 2021; Pittsburgh PA</li>
+                </ul>
 
-                    <li style="margin: 0 0 1em 0;"><b>Vehicle to Grid</b> - Presented at the NEDC Partner Meeting (EPA organized) on behalf of the New Jersey Department of Environmental Protection. 2021 October 20; Pittsburgh PA</li>
+                <hr class="m-4" />
 
-                    <li style="margin: 0 0 1em 0;"><b>Certification for Carbon Removal: Social and Environmental Impacts</b> - Presented to the Institute for Carbon Removal Law and Policy at American University for Harris Policy Labs. 2021 March 18; Chicago IL</li>
+                <h3 class="mb-3">Media</h3>
+                <ul class="fa-ul mb-0">
+<li style="margin: 0 0 1em 0;">2024: "<a href="https://mse.engineering.cmu.edu/news/2024/04/18-charged-to-change-morin.html" target="_blank">Charged to make change</a>" — CMU Materials Science and Engineering profile by Monica Cooney</li>
 
-                    <li style="margin: 0 0 1em 0;"><b>Effect of Cell Chemistry on Transition Metal Migration and Electrolyte Decomposition in Lithium-ion Batteries</b> - BS Thesis. Presented at the Chemistry & Biological Chemistry Honors Thesis Symposium. 2020 May 7; Chicago IL.</li>
-
-                    <li style="margin: 0 0 1em 0;"><b>Identification of Organics in Si NMC and Si LCO Cells</b> - Presented at: Argonne National Lab, Chemical Science and Engineering Division 2019 August 22; Lemont IL</li>
-
-                    <li style="margin: 0 0 1em 0;"><b>Effects of Cathode Corrosion By Electrolyte Decomposition Products: An investigation of Transition Metal Loss from Lithium Ion Batteries at High Voltage</b> - Poster presented at: Chicago Area Undergraduate Research Symposium 2019 April 13; Chicago, IL</li>
-
-                    <li style="margin: 0 0 1em 0;"><b>Students Participating in Killer Engineering, Robotics FRC Team 293</b> - Presented at BITcon, Bristol-Meyers Squibb’s annual IT conference, April 19 2016</li>
-
-            </ul>
-
-        </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Media -->
-                        <section class="resume-section" id="blogsmedia">
-                            <div class="resume-section-content">
-                                <h2 class="mb-5"> Media</h2>
-
-                                <br>
-
-                                <hr class="m-4" />
-
-                                <h3 class="mb-3">Media </h3>
-                                <ul class="fa-ul mb-0">
-
-                                    <li style="margin: 0 0 1em 0;"> 2021: For my work with the Graduate Student Assembly "<a href="https://www.forbes.com/sites/civicnation/2021/11/16/looking-beyond-the-ballot-box-a-holistic-view-of-nonpartisan-democratic-engagement/?sh=3e778c8c4159" target="-blank">Looking Beyond The Ballot Box: A Holistic View Of Nonpartisan Democratic Engagement</a>" </li>
-
-                                </ul>
-
-
-                            </div>
-                        </section>
-                        <hr class="m-0" />
-
-                      <section class="resume-section" id="education">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Education</h2>
-
-        <!-- PhD Education Entry -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">PhD Carnegie Mellon University</h3>
-                <div class="subheading mb-3">Engineering and Public Policy & Materials Science and Engineering</div>
-                <p>Pittsburgh, PA</p>
+                    <li style="margin: 0 0 1em 0;">2021: For my work with the Graduate Student Assembly — "<a href="https://www.forbes.com/sites/civicnation/2021/11/16/looking-beyond-the-ballot-box-a-holistic-view-of-nonpartisan-democratic-engagement/?sh=3e778c8c4159" target="_blank">Looking Beyond The Ballot Box: A Holistic View Of Nonpartisan Democratic Engagement</a>" (Forbes)</li>
+                </ul>
             </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Expected June 2026</p></div>
-        </div>
-
-        <!-- MSc Education Entry -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">MSc Carnegie Mellon University</h3>
-                <div class="subheading mb-3">Materials Science and Engineering</div>
-                <p>Pittsburgh, PA</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">May 2024</p></div>
-        </div>
-
-        <!-- MA Education Entry -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">MA University of Chicago</h3>
-                <div class="subheading mb-3">Public Policy</div>
-                <p>Chicago, IL</p>
-                <p><i>Certificate in Energy and Environmental Policy</i></p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">June 2021</p></div>
-        </div>
-
-        <!-- BS Education Entry -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">BS University of Chicago</h3>
-                <div class="subheading mb-3">Chemistry with Honors</div>
-                <p>Chicago, IL</p>
-                <p>Thesis: “Effect of Cell Chemistry on Transition Metal Migration and Electrolyte Decomposition in Lithium-ion Batteries”</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">June 2020</p></div>
-        </div>
-    </div>
-</section>
-<hr class="m-0" />
-
-
-                        <!-- Experience-->
-        <section class="resume-section" id="experience">
-          <div class="resume-section-content">
-              <h2 class="mb-5"> Experience</h2>
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                <h3 class="mb-0">Whitacre Lab, Carnegie Mellon</h3>
-        
-        
-        <div class="subheading mb-3">PhD Student</div>
-        <p>Conducting research on lithium-ion batteries and techno-economic analysis, focusing on EV fast charging, V2X, recycling, second life, and consumer charging behavior.</p>
-    </div>
-    <div class="flex-shrink-0"><p style="text-align:right;">July 2021 – Present</p></div>
-</div>
-
-<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">NJ Department of Environmental Protection</h3>
-        <div class="subheading mb-3">V2X Research Intern</div>
-        <p>Produced a white paper on Vehicle to Grid opportunities around electric school buses using bidirectional charging. Presented findings at the Northeast Diesel Collaborative (2021).</p>
-    </div>
-    <div class="flex-shrink-0"><p style="text-align:right;">June – Oct 2021</p></div>
-</div>
-
-<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">Tirrell Lab, University of Chicago</h3>
-        <div class="subheading mb-3">Research Assistant</div>
-        <p>Investigated modified cellulose nanocrystals (CNCs) based materials for anti-fouling separation membranes and molecular selectivity.</p>
-    </div>
-    <div class="flex-shrink-0"><p style="text-align:right;">April 2019 – March 2020</p></div>
-</div>
-
-<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">Lithium Ion Battery Research, Argonne National Lab</h3>
-        <div class="subheading mb-3">Research Assistant</div>
-        <p>Conducted research on battery corrosion mechanisms and SEI formation, resulting in a first-author publication in ACS Applied Energy Materials.</p>
-    </div>
-    <div class="flex-shrink-0"><p style="text-align:right;">Summer 2018, 2019</p></div>
-</div>
-
-<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">Falkowski Lab, Rutgers University</h3>
-        <div class="subheading mb-3">Research Assistant</div>
-        <p>Improved methodology for expressing coral proteins and studied Brushite formation under high pH conditions.</p>
-    </div>
-    <div class="flex-shrink-0"><p style="text-align:right;">Summer 2017</p></div>
-</div>
-
-                            <!-- Non-Research Experience -->
-<section class="resume-section" id="non-research-experience">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Non-Research Experience</h2>
-
-        <!-- Graduate Student Assembly, CMU President -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Graduate Student Assembly, CMU</h3>
-                <div class="subheading mb-3">President</div>
-                <p>Oversee all GSA operations and university collaboration to uplift the graduate student community.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Dec 2022 - Present</p></div>
-        </div>
-
-        <!-- Graduate Student Assembly, Vice President of Campus Affairs -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Graduate Student Assembly</h3>
-                <div class="subheading mb-3">Vice President of Campus Affairs</div>
-                <p>Elected executive committee member responsible for committee meetings and supervision of advocates.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">May 2022 - Dec 2022</p></div>
-        </div>
-
-        <!-- Graduate Student Assembly, EPP Representative -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Graduate Student Assembly</h3>
-                <div class="subheading mb-3">EPP Representative</div>
-                <p>Elected representative attending meetings, volunteering, and engaging with department heads.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Sep 2021 - May 2022</p></div>
-        </div>
-
-        <!-- External Advocacy Committee -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">External Advocacy Committee</h3>
-                <div class="subheading mb-3">Member</div>
-                <p>Advocated for graduate student issues and traveled to meet with representatives.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Sep 2021 - May 2021</p></div>
-        </div>
-
-        <!-- Material Science and Engineering DEI Committee -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Material Science and Engineering DEI Committee</h3>
-                <div class="subheading mb-3">Member</div>
-                <p>Leading efforts to create a student-run micro course and supporting committee activities.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Jan 2022 - Present</p></div>
-        </div>
-
-        <!-- Battle of The Buildings -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Battle of The Buildings, University of Chicago</h3>
-                <div class="subheading mb-3">Lead Organizer</div>
-                <p>Partnered with university departments to hold an energy and water reduction competition.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Nov - May 2021</p></div>
-        </div>
-
-        <!-- Student Government, University of Chicago -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Student Government, University of Chicago</h3>
-                <div class="subheading mb-3">Committee on Campus Sustainability, Member</div>
-                <p>Pressured the University to increase emission reduction commitments and helped form sustainability initiatives.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Sep 2016 - June 2020</p></div>
-        </div>
-
-        <!-- University of Chicago Model United Nations -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">University of Chicago Model United Nations</h3>
-                <div class="subheading mb-3">Assistant Chair</div>
-                <p>Facilitated simulations for attendees during annual model UN conferences.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Sep 2018 - June 2020</p></div>
-        </div>
-
-        <!-- Housing and Residence Life, University of Chicago -->
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Housing and Residence Life, University of Chicago</h3>
-                <div class="subheading mb-3">Resident Assistant</div>
-                <p>Executed conflict mediation and crisis management for ~100 plus students.</p>
-            </div>
-            <div class="flex-shrink-0"><p style="text-align:right;">Sep 2018 - June 2020</p></div>
-        </div>
-
-        </div>
         </section>
         <hr class="m-0" />
 
+        <section class="resume-section" id="advising">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Teaching and Advising</h2>
 
-                                <!-- Awards-->
-                                <section class="resume-section" id="awards">
-                                    <div class="resume-section-content">
-                                        <h2 class="mb-5">Honors</h2>
+                <h3 class="subsection-heading" style="margin-top:0;">Teaching</h3>
+                <div class="d-flex mb-2">
+                    <div class="flex-grow-1"><span><b>Energy Storage Systems and Materials</b> | Teaching Assistant | 44 graduate students</span></div>
+                    <div class="flex-shrink-0"><span>Fall 2024</span></div>
+                </div>
 
-                                            <div class="d-flex">
-                                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                                <div class="flex-grow-1"><span><b>Best Poster</b> | CMU Energy Week 2023</span></div>
-                                            </div>
+                <div class="d-flex mb-5">
+                    <div class="flex-grow-1"><span><b><a href="http://coursecatalog.web.cmu.edu/schools-colleges/collegeofengineering/departmentofengineeringandpublicpolicy/courses/" target="_blank">Decision Making Methods for Engineers and Scientists</a></b> | Teaching Assistant + Substitute Lecturer | Prof. Paulina Jaramillo</span></div>
+                    <div class="flex-shrink-0"><span>Fall 2023</span></div>
+                </div>
 
-                                            <div class="d-flex">
-                                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                                <div class="flex-grow-1"><span><b>Herbert L. Toor Award</b> for best Part A Qualifier Paper (Jan 17 2023)</span></div>
-                                                </div>
+                <h3 class="subsection-heading">Advising</h3>
 
-                                                <div class="d-flex">
-                                                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                                                    <div class="flex-grow-1"><span><b>Sloan Transportation Fellowship</b></span></div>
-                                                </div>
+                <div class="card-grid">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Aeka Chatra</div>
+                        <div class="card-subtitle">Undergraduate Mechanical Engineering, Capstone</div>
+                        <div class="card-meta">Spring – Summer 2025</div>
+                        <div class="card-desc">"Impact of Heterogeneity in Electric Vehicle Fast Charging Profiles on Queuing and Grid Load"</div>
+                    </div>
 
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Mohit Karangutkar</div>
+                        <div class="card-subtitle">Masters Student, Engineering and Public Policy</div>
+                        <div class="card-meta">Summer 2025</div>
+                        <div class="card-desc">"Electric Vehicle Battery Warranties Over Time: A U.S. Analysis"</div>
+                    </div>
 
-                                    </div>
-                                </section>
-                                <hr class="m-0" />
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Swastik Kushagr &amp; Rishi Wadgaonkar</div>
+                        <div class="card-subtitle">Energy Systems and Materials, Graduate Project</div>
+                        <div class="card-meta">Fall 2025</div>
+                        <div class="card-desc">"Degradation Mechanisms in Fast-Charged NCA Lithium-Ion Batteries: Insights from Incremental Capacity Analysis"</div>
+                    </div>
 
-                                <!-- Activities: leadership, teaching-->
-                                <section class="resume-section" id="more">
-                                    <div class="resume-section-content">
-                                        <h2 class="mb-5">More information</h2>
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Quantitative Entrepreneurship Team</div>
+                        <div class="card-subtitle">M. Rizwan, V. Sayanwisuttikam, R. F. Rahmi, W. Martinez Diaz, R. Chaplot</div>
+                        <div class="card-meta">Spring 2025</div>
+                        <div class="card-desc">"EV Battery Anode for High-Speed Charging: a Process Based Cost Model Analysis"</div>
+                    </div>
+                </div>
 
-                                        <h3 class="mb-3">Leadership positions</h3>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-                                        <div class="d-flex">
-                                            <div class="flex-grow-1"><span><b>GSA President</b> | Many things </span></div>
-                                            <div class="flex-shrink-0"> <span>Dec 2022 - May 2024</span></div>
-                                        </div>
+        <section class="resume-section" id="affiliations">
+            <div class="resume-section-content">
+                <h2 class="mb-3">Community &amp; Service</h2>
+                <p class="lead mb-5" style="font-size: 1.1rem;">
+                    The groups that shaped how I think, and the roles I took on to give back.
+                </p>
 
-                                        <hr class="m-4" />
+                <h3 class="subsection-heading" style="margin-top:0;">Community</h3>
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/16-whitacre-mad-mex.jpg" alt="Whitacre Lab group photo" />
+                        <div class="card-title">Whitacre Lab</div>
+                        <div class="card-subtitle">PhD home — advised by Prof. Jay Whitacre</div>
+                        <div class="card-desc">Where I learned to think about batteries as systems, not just chemistries. The lab taught me that the most important question is often "what does this mean for someone trying to make a real product" — and that the bench and the spreadsheet need to talk to each other. <a href="https://www.cmu.edu/me/whitacre/" target="_blank">Lab site</a>.</div>
+                    </div>
 
-                                        <!-- Teaching-->
-                                        <h3 class="mb-3">Teaching</h3>
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Michalek+Group" alt="Michalek Research Group" />
+                        <div class="card-title">Michalek Research Group</div>
+                        <div class="card-subtitle">PhD co-advisor — Prof. Jeremy Michalek</div>
+                        <div class="card-desc">Where I learned that a model is only as good as the decision it informs. The Design Decisions Lab gave me the techno-economic toolkit and the discipline to be honest about uncertainty — and the conviction that engineering analysis should be useful to people who aren't engineers. <a href="https://www.cmu.edu/me/ddl/" target="_blank">Lab site</a>.</div>
+                    </div>
 
-                                        <div class="d-flex">
-                                            <div class="flex-grow-1"><span><b><a href="http://coursecatalog.web.cmu.edu/schools-colleges/collegeofengineering/departmentofengineeringandpublicpolicy/courses/" target="_blank">Decision Making Methods for Engineers and Scientists</a></b> | Teaching assistant + Substitute Lecturer | Paulina Jaramillo </span></div>
-                                            <div class="flex-shrink-0"> <span>Fall 2023</span></div>
-                                        </div>
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/08-epp-christmas-best.jpg" alt="Engineering and Public Policy department" />
+                        <div class="card-title">Engineering and Public Policy</div>
+                        <div class="card-subtitle">Home department, Carnegie Mellon</div>
+                        <div class="card-desc">EPP trains engineers to do policy work that's technically rigorous, and trains policy people to take engineering seriously. My cohort and the faculty here are the reason I'm comfortable in a regulator's office <i>and</i> in a lab. <a href="https://www.cmu.edu/epp/" target="_blank">Department site</a>.</div>
+                    </div>
 
-                                        <hr class="m-4" />
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/19-gsa-larger-group-best.jpg" alt="CMU Graduate Student Assembly" style="object-position: center 35%;" />
+                        <div class="card-title">Graduate Student Assembly</div>
+                        <div class="card-subtitle">The people, not the resume line</div>
+                        <div class="card-desc">Some of the people I'm proudest to have worked with at CMU. Running GSA gave me a team of strong, opinionated graduate student leaders across every college, and we figured out how to actually move things together. Also where I learned that institutional change is slow, and worth it.</div>
+                    </div>
+                </div>
 
-                                        <h3 class="mb-3">Select Skills </h3>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">R &nbsp|</li>
-                                            <li class="list-inline-item">some Python &nbsp|</li>
-                                            <li class="list-inline-item">SEM &nbsp|</li>
-                                            <li class="list-inline-item">TEM &nbsp|</li>
-                                            <li class="list-inline-item">XRD &nbsp|</li>
-                                        </ul>
+                <h3 class="subsection-heading">Service</h3>
+                <p class="mb-4" style="color: #495057;">
+                    Roles, accomplishments, and committee work across graduate student governance and university affairs.
+                </p>
 
-                                    </div>
-                                </section>
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/18-gsa-group-with-logo.jpg" alt="GSA roles" />
+                        <div class="card-title">GSA — President, VP, EPP Rep</div>
+                        <div class="card-subtitle">Sep 2021 – May 2024</div>
+                        <div class="card-desc">As President (Dec 2022 – May 2024), oversaw a team of 8 and ~$1M annual budget for 7,000 grad students. Established the Doctoral Stipend Annual Review Committee, secured Parental Accommodations for non-birthing parents, raised the minimum PhD stipend, and launched the Professional Development Grant fund. Previously VP Campus Affairs (Apr – Dec 2022) and EPP Rep (Sep 2021 – Apr 2022; Representative Award, Fall 2021).</div>
+                    </div>
 
-                                <!-- Bootstrap core JS-->
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-                                <!-- Third party plugin JS-->
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-                                <!-- Core theme JS-->
-                                <script src="js/scripts.js"></script>
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/25-cvc-subway-advocacy.jpg" alt="External Advocacy Committee" />
+                        <div class="card-title">External Advocacy Committee</div>
+                        <div class="card-subtitle">Member, GSA · Sep 2021 – Present</div>
+                        <div class="card-desc">Travelled to DC to meet 30+ House and Senate offices (2021, 2022, 2024, 2025) and to Harrisburg, PA (2024, 2025). Advocated for graduate student mental health, food security, immigration, and federal research funding.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/02-epp-magazines.jpg" alt="EPP Student Facilitation Board" />
+                        <div class="card-title">EPP Student Facilitation Board</div>
+                        <div class="card-subtitle">Member</div>
+                        <div class="card-desc">Working with the Engineering and Public Policy department on student-led initiatives and community-building.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=DEI" alt="MSE DEI Committee" />
+                        <div class="card-title">MSE DEI Committee</div>
+                        <div class="card-subtitle">Member · 2022</div>
+                        <div class="card-desc">Co-led the creation of a student-run micro course for incoming students from non-MSE backgrounds.</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-heading">University Service</h3>
+                <div class="service-block">
+                    <img src="assets/img/30-convocation-stage.jpg" alt="On stage at CMU convocation in graduation regalia" />
+                    <ul>
+                        <li>Search Advisory Committee for EPP Department Head <span class="svc-meta">(2025)</span></li>
+                        <li>Co-Chair, Provost Graduate Advisory Board <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Co-Chair, Student Government Executive Council <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Member (Student Rep), CMU Faculty Senate <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Member, University Leadership Student Advisory Council (ULSAC) <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Co-Host, President's Dinner — Annual GSA Dinner <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Search Advisory Committee for Assistant Vice Provost for Student Affairs <span class="svc-meta">(2023)</span></li>
+                        <li>CMU Board of Trustees — Educational Affairs and Enrollment Committee <span class="svc-meta">(2023)</span></li>
+                        <li>Member, Design Review Committee <span class="svc-meta">(2022 – 2023)</span></li>
+                        <li>Member, Sustainability Committee <span class="svc-meta">(2022)</span></li>
+                        <li>Member, Public Art Committee <span class="svc-meta">(2022)</span></li>
+                        <li>Search Advisory Committee for Chief of Police <span class="svc-meta">(2022)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+
+                <!-- PhD Education Entry -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">PhD Carnegie Mellon University</h3>
+                        <div class="subheading mb-3">Engineering and Public Policy & Materials Science and Engineering</div>
+                        <p>Pittsburgh, PA</p>
+                        <p><i>Thesis: "From Particle to Pack to Policy: Quantifying the Relative Impact of Electric Vehicle Fast Charging on Battery Degradation through Experimental, Techno-Economic and Policy Analysis"</i></p>
+                    </div>
+                    <div class="flex-shrink-0"><p style="text-align:right;">Expected December 2026</p></div>
+                </div>
+
+                <!-- MSc Education Entry -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">MS Carnegie Mellon University</h3>
+                        <div class="subheading mb-3">Materials Science and Engineering</div>
+                        <p>Pittsburgh, PA</p>
+                    </div>
+                    <div class="flex-shrink-0"><p style="text-align:right;">2024</p></div>
+                </div>
+
+                <!-- MA Education Entry -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">MA University of Chicago</h3>
+                        <div class="subheading mb-3">Public Policy</div>
+                        <p>Chicago, IL</p>
+                        <p><i>Certificate in Energy and Environmental Policy</i></p>
+                    </div>
+                    <div class="flex-shrink-0"><p style="text-align:right;">2021</p></div>
+                </div>
+
+                <!-- BS Education Entry -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">BS University of Chicago</h3>
+                        <div class="subheading mb-3">Chemistry with Honors</div>
+                        <p>Chicago, IL</p>
+                        <p><i>Thesis: "Effect of Cell Chemistry on Transition Metal Migration and Electrolyte Decomposition in Lithium-ion Batteries"</i></p>
+                    </div>
+                    <div class="flex-shrink-0"><p style="text-align:right;">2020</p></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-3">Experience</h2>
+                <p class="lead mb-5" style="font-size: 1.1rem;">
+                    The arc, in short — full chronology is on the <a href="assets/files/H_Morin_CV.pdf" target="_blank">CV</a>.
+                </p>
+
+                <div class="card-grid">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/21-hands-with-battery.jpg" alt="PhD research at Whitacre Lab" />
+                        <div class="card-title">PhD Researcher, Whitacre Lab</div>
+                        <div class="card-subtitle">Carnegie Mellon · July 2021 – Present</div>
+                        <div class="card-desc">EV battery fast-charging degradation across multiple chemistries; techno-economic models linking experimental uncertainty to consumer cost; V2X, recycling, and second-life economics.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/27-njdep-logo.jpg" alt="NJ DEP V2X internship" />
+                        <div class="card-title">V2X Research Intern, NJ DEP</div>
+                        <div class="card-subtitle">New Jersey Dept. of Environmental Protection · 2021</div>
+                        <div class="card-desc">Co-authored a white paper on vehicle-to-grid opportunities for electric school buses. Interviewed V2G bus manufacturers, former PJM consultants, and academics. Presented at the Northeast Diesel Collaborative.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/26-argonne-labcoat.jpg" alt="Argonne battery research" />
+                        <div class="card-title">Lithium-Ion Battery Research, Argonne</div>
+                        <div class="card-subtitle">Argonne National Laboratory · Summers 2018, 2019</div>
+                        <div class="card-desc">Studied corrosion in NMC cathodes and SEI formation on Si anodes against NMC and LCO. Work became a first-author publication in <i>ACS Applied Energy Materials</i> and three projects in my BS thesis.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <section class="resume-section" id="writing">
+            <div class="resume-section-content">
+                <h2 class="mb-3">Writing &amp; Code</h2>
+                <p class="lead mb-4" style="font-size: 1.1rem;">
+                    Public-facing code and data from my research.
+                </p>
+
+                <ul class="fa-ul mb-0" style="font-size: 1rem;">
+                    <li style="margin: 0 0 0.85em 0;">
+                        <b><a href="https://github.com/hannah-morin" target="_blank">GitHub</a></b> — code from my research, currently sparse. Cleaning up specific repos for public release alongside paper publications.
+                    </li>
+                    <li style="margin: 0 0 0.85em 0;">
+                        <b>Figshare</b> — open datasets:
+                        <ul style="list-style-type: circle; margin-top: 0.4em;">
+                            <li><a href="https://figshare.com/articles/dataset/Quantifying_the_Degradation_Cost_of_Frequent_Fast_Charging_Across_Multiple_Electric_Vehicle_Battery_Chemistries/28811366" target="_blank">JPS 2025 — Degradation cost dataset</a></li>
+                            <li><a href="https://figshare.com/articles/dataset/Digitized_Electric_Vehicle_Fast-Charging_Profiles_by_Model_Power_vs_SOC_SOE_CSV_Format_Version_1/30570653" target="_blank">JPS 2025 — Digitized EV fast-charging profiles</a></li>
+                        </ul>
+                    </li>
+                    <li style="margin: 0 0 0.85em 0;">
+                        <b>Substack</b> — coming soon. Plans for writing on batteries, EVs, and the messy work of decarbonization, for smart people who don't have a PhD in electrochemistry.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <section class="resume-section" id="hobbies">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Outside the Lab</h2>
+                <p class="mb-5">A few things outside of research.</p>
+
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/28-cat-birthday.jpg" alt="My cats" />
+                        <div class="card-title">Cats</div>
+                        <div class="card-desc">Two recent additions to the household. They supervise all writing, modeling, and renovation work — closely.</div>
+                    </div>
+                </div>
+
+                <ul class="fa-ul mb-0" style="font-size: 1rem;">
+                    <li style="margin: 0 0 0.6em 0;">
+                        <b>DIY</b> — slowly turning the house into something that actually works. Currently re-tiling the kitchen backsplash.
+                    </li>
+                    <li style="margin: 0 0 0.6em 0;">
+                        <b>Hiking</b> — best place to think through a degradation model: somewhere outside, ideally with a view, ideally without cell service.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        // Build email links and visible text at runtime so basic scrapers can't see them.
+        (function () {
+            var u = "hmorin", d = "andrew.cmu.edu", addr = u + "@" + d;
+            document.querySelectorAll(".js-email-link").forEach(function (a) {
+                a.href = "mailto:" + addr;
+            });
+            document.querySelectorAll(".js-email-text").forEach(function (s) {
+                s.textContent = addr;
+            });
+        })();
+    </script>
 </body>
 </html>
