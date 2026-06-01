@@ -134,6 +134,52 @@
                 grid-template-columns: 1fr;
             }
         }
+        .row-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .row-card {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 1.25rem;
+            align-items: center;
+        }
+        .row-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            background-color: #f1efe7;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .row-card .row-card-title {
+            font-family: "Saira Extra Condensed", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.15rem;
+            line-height: 1.15;
+            color: #343a40;
+            margin-bottom: 0.2rem;
+        }
+        .row-card .row-card-subtitle {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 0.35rem;
+        }
+        .row-card .row-card-desc {
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.45;
+        }
+        @media (max-width: 575.98px) {
+            .row-card {
+                grid-template-columns: 80px 1fr;
+                gap: 1rem;
+            }
+        }
         .looking-for {
             display: flex;
             align-items: baseline;
@@ -200,8 +246,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#advising">Teaching &amp; Advising</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#affiliations">Community &amp; Service</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education &amp; Lab</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#writing">Writing</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobbies">Outside the Lab</a></li>
             </ul>
@@ -350,6 +395,23 @@
                     <div class="flex-shrink-0"><span>Fall 2023</span></div>
                 </div>
 
+                <h3 class="subsection-heading">Curriculum &amp; Mentorship Initiatives</h3>
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=MSE+GSAC" alt="MSE Graduate Student Advisory Committee" />
+                        <div class="card-title">MSE GSAC</div>
+                        <div class="card-subtitle">Materials Science &amp; Engineering Graduate Student Advisory Committee · 2022</div>
+                        <div class="card-desc">Co-led the creation of a student-run micro course for incoming PhD students from non-MSE backgrounds, bridging the gap between policy/engineering backgrounds and core materials science.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Invisible+Curriculum" alt="Invisible Curriculum initiative" />
+                        <div class="card-title">Invisible Curriculum</div>
+                        <div class="card-subtitle">EPP initiative · Leading</div>
+                        <div class="card-desc">Building a student-led program on the things PhD students need but rarely get taught in the classroom: literature reviews, journal publication, personal websites, navigating university structures, and the unspoken expectations of academic life.</div>
+                    </div>
+                </div>
+
                 <h3 class="subsection-heading">Advising</h3>
 
                 <div class="card-grid">
@@ -448,19 +510,6 @@
                         <div class="card-desc">Travelled to DC to meet 30+ House and Senate offices (2021, 2022, 2024, 2025) and to Harrisburg, PA (2024, 2025). Advocated for graduate student mental health, food security, immigration, and federal research funding.</div>
                     </div>
 
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/02-epp-magazines.jpg" alt="EPP Student Facilitation Board" />
-                        <div class="card-title">EPP Student Facilitation Board</div>
-                        <div class="card-subtitle">Member</div>
-                        <div class="card-desc">Working with the Engineering and Public Policy department on student-led initiatives and community-building.</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=DEI" alt="MSE DEI Committee" />
-                        <div class="card-title">MSE DEI Committee</div>
-                        <div class="card-subtitle">Member · 2022</div>
-                        <div class="card-desc">Co-led the creation of a student-run micro course for incoming students from non-MSE backgrounds.</div>
-                    </div>
                 </div>
 
                 <h3 class="subsection-heading">University Service</h3>
@@ -488,81 +537,97 @@
         
         <section class="resume-section" id="education">
             <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
+                <h2 class="mb-3">Education + Lab Experience</h2>
+                <p class="lead mb-5" style="font-size: 1.1rem;">
+                    Each degree paired with the research that went with it. Full chronology is on the <a href="assets/files/H_Morin_CV.pdf" target="_blank">CV</a>.
+                </p>
 
-                <!-- PhD Education Entry -->
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <!-- PhD + Whitacre -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">PhD Carnegie Mellon University</h3>
-                        <div class="subheading mb-3">Engineering and Public Policy & Materials Science and Engineering</div>
-                        <p>Pittsburgh, PA</p>
-                        <p><i>Thesis: "From Particle to Pack to Policy: Quantifying the Relative Impact of Electric Vehicle Fast Charging on Battery Degradation through Experimental, Techno-Economic and Policy Analysis"</i></p>
+                        <div class="subheading mb-3">Engineering and Public Policy &amp; Materials Science and Engineering</div>
+                        <p style="margin-bottom: 0.25rem;">Pittsburgh, PA</p>
+                        <p style="margin-bottom: 0;"><i>Thesis: "From Particle to Pack to Policy: Quantifying the Relative Impact of Electric Vehicle Fast Charging on Battery Degradation through Experimental, Techno-Economic and Policy Analysis"</i></p>
                     </div>
                     <div class="flex-shrink-0"><p style="text-align:right;">Expected December 2026</p></div>
                 </div>
+                <div class="row-card-list">
+                    <div class="row-card">
+                        <img src="assets/img/21-hands-with-battery.jpg" alt="PhD research at Whitacre Lab" />
+                        <div>
+                            <div class="row-card-title">Whitacre Lab — PhD Researcher</div>
+                            <div class="row-card-subtitle">Carnegie Mellon · July 2021 – Present</div>
+                            <div class="row-card-desc">EV battery fast-charging degradation across multiple chemistries; techno-economic models linking experimental uncertainty to consumer cost; V2X, recycling, and second-life economics.</div>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- MSc Education Entry -->
+                <!-- MS (no associated research) -->
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">MS Carnegie Mellon University</h3>
                         <div class="subheading mb-3">Materials Science and Engineering</div>
-                        <p>Pittsburgh, PA</p>
+                        <p style="margin-bottom: 0;">Pittsburgh, PA</p>
                     </div>
                     <div class="flex-shrink-0"><p style="text-align:right;">2024</p></div>
                 </div>
 
-                <!-- MA Education Entry -->
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <!-- MA + NJ DEP -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">MA University of Chicago</h3>
                         <div class="subheading mb-3">Public Policy</div>
-                        <p>Chicago, IL</p>
-                        <p><i>Certificate in Energy and Environmental Policy</i></p>
+                        <p style="margin-bottom: 0.25rem;">Chicago, IL</p>
+                        <p style="margin-bottom: 0;"><i>Certificate in Energy and Environmental Policy</i></p>
                     </div>
                     <div class="flex-shrink-0"><p style="text-align:right;">2021</p></div>
                 </div>
+                <div class="row-card-list">
+                    <div class="row-card">
+                        <img src="assets/img/27-njdep-logo.jpg" alt="NJ DEP V2X internship" />
+                        <div>
+                            <div class="row-card-title">NJ DEP — V2X Research Intern</div>
+                            <div class="row-card-subtitle">New Jersey Dept. of Environmental Protection · 2021</div>
+                            <div class="row-card-desc">Co-authored a white paper on vehicle-to-grid opportunities for electric school buses. Interviewed V2G bus manufacturers, former PJM consultants, and academics. Presented at the Northeast Diesel Collaborative.</div>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- BS Education Entry -->
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <!-- BS + Argonne + Tirrell + Falkowski -->
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                     <div class="flex-grow-1">
                         <h3 class="mb-0">BS University of Chicago</h3>
                         <div class="subheading mb-3">Chemistry with Honors</div>
-                        <p>Chicago, IL</p>
-                        <p><i>Thesis: "Effect of Cell Chemistry on Transition Metal Migration and Electrolyte Decomposition in Lithium-ion Batteries"</i></p>
+                        <p style="margin-bottom: 0.25rem;">Chicago, IL</p>
+                        <p style="margin-bottom: 0;"><i>Thesis: "Effect of Cell Chemistry on Transition Metal Migration and Electrolyte Decomposition in Lithium-ion Batteries"</i></p>
                     </div>
                     <div class="flex-shrink-0"><p style="text-align:right;">2020</p></div>
                 </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-3">Experience</h2>
-                <p class="lead mb-5" style="font-size: 1.1rem;">
-                    The arc, in short — full chronology is on the <a href="assets/files/H_Morin_CV.pdf" target="_blank">CV</a>.
-                </p>
-
-                <div class="card-grid">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/21-hands-with-battery.jpg" alt="PhD research at Whitacre Lab" />
-                        <div class="card-title">PhD Researcher, Whitacre Lab</div>
-                        <div class="card-subtitle">Carnegie Mellon · July 2021 – Present</div>
-                        <div class="card-desc">EV battery fast-charging degradation across multiple chemistries; techno-economic models linking experimental uncertainty to consumer cost; V2X, recycling, and second-life economics.</div>
+                <div class="row-card-list">
+                    <div class="row-card">
+                        <img src="assets/img/26-argonne-labcoat.jpg" alt="Argonne battery research" />
+                        <div>
+                            <div class="row-card-title">Argonne — Lithium-Ion Battery Research</div>
+                            <div class="row-card-subtitle">Argonne National Laboratory · Summers 2018, 2019</div>
+                            <div class="row-card-desc">Studied corrosion in NMC cathodes and SEI formation on Si anodes against NMC and LCO. Work became a first-author publication in <i>ACS Applied Energy Materials</i> and three projects in my BS thesis.</div>
+                        </div>
                     </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/27-njdep-logo.jpg" alt="NJ DEP V2X internship" />
-                        <div class="card-title">V2X Research Intern, NJ DEP</div>
-                        <div class="card-subtitle">New Jersey Dept. of Environmental Protection · 2021</div>
-                        <div class="card-desc">Co-authored a white paper on vehicle-to-grid opportunities for electric school buses. Interviewed V2G bus manufacturers, former PJM consultants, and academics. Presented at the Northeast Diesel Collaborative.</div>
+                    <div class="row-card">
+                        <img src="https://placehold.co/400x400/588157/ffffff?text=Tirrell" alt="Tirrell Lab" />
+                        <div>
+                            <div class="row-card-title">Tirrell Lab — Research Assistant</div>
+                            <div class="row-card-subtitle">University of Chicago · April 2019 – March 2020</div>
+                            <div class="row-card-desc">Investigated modified cellulose nanocrystals (CNCs) for anti-fouling separation membranes and molecular selectivity.</div>
+                        </div>
                     </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/26-argonne-labcoat.jpg" alt="Argonne battery research" />
-                        <div class="card-title">Lithium-Ion Battery Research, Argonne</div>
-                        <div class="card-subtitle">Argonne National Laboratory · Summers 2018, 2019</div>
-                        <div class="card-desc">Studied corrosion in NMC cathodes and SEI formation on Si anodes against NMC and LCO. Work became a first-author publication in <i>ACS Applied Energy Materials</i> and three projects in my BS thesis.</div>
+                    <div class="row-card">
+                        <img src="https://placehold.co/400x400/588157/ffffff?text=Falkowski" alt="Falkowski Lab" />
+                        <div>
+                            <div class="row-card-title">Falkowski Lab — Research Assistant</div>
+                            <div class="row-card-subtitle">Rutgers University · Summer 2017</div>
+                            <div class="row-card-desc">Studied brushite formation under high pH conditions using SEM and X-ray diffraction. Improved methodology for expressing coral proteins involved in aragonite formation in stony coral.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -600,22 +665,29 @@
                 <h2 class="mb-5">Outside the Lab</h2>
                 <p class="mb-5">A few things outside of research.</p>
 
-                <div class="card-grid mb-5">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/28-cat-birthday.jpg" alt="My cats" />
-                        <div class="card-title">Cats</div>
-                        <div class="card-desc">Two recent additions to the household. They supervise all writing, modeling, and renovation work — closely.</div>
+                <div class="row-card-list">
+                    <div class="row-card">
+                        <img src="assets/img/28-cat-birthday.jpg" alt="My cats" />
+                        <div>
+                            <div class="row-card-title">Cats</div>
+                            <div class="row-card-desc">Two recent additions to the household. They supervise all writing, modeling, and renovation work — closely.</div>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div></div>
+                        <div>
+                            <div class="row-card-title">DIY</div>
+                            <div class="row-card-desc">Slowly turning the house into something that actually works. Currently re-tiling the kitchen backsplash.</div>
+                        </div>
+                    </div>
+                    <div class="row-card">
+                        <div></div>
+                        <div>
+                            <div class="row-card-title">Hiking</div>
+                            <div class="row-card-desc">Best place to think through a degradation model: somewhere outside, ideally with a view, ideally without cell service.</div>
+                        </div>
                     </div>
                 </div>
-
-                <ul class="fa-ul mb-0" style="font-size: 1rem;">
-                    <li style="margin: 0 0 0.6em 0;">
-                        <b>DIY</b> — slowly turning the house into something that actually works. Currently re-tiling the kitchen backsplash.
-                    </li>
-                    <li style="margin: 0 0 0.6em 0;">
-                        <b>Hiking</b> — best place to think through a degradation model: somewhere outside, ideally with a view, ideally without cell service.
-                    </li>
-                </ul>
             </div>
         </section>
     </div>
