@@ -180,6 +180,15 @@
                 gap: 1rem;
             }
         }
+        /* Community variant: text on left, image on right, medium size */
+        .row-card-right {
+            grid-template-columns: 1fr 160px;
+        }
+        @media (max-width: 575.98px) {
+            .row-card-right {
+                grid-template-columns: 1fr;
+            }
+        }
         .looking-for {
             display: flex;
             align-items: baseline;
@@ -241,13 +250,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                                    <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Training</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#advising">Teaching &amp; Advising</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#affiliations">Community &amp; Service</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education &amp; Lab</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#writing">Writing</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobbies">Outside the Lab</a></li>
             </ul>
         </div>
@@ -323,6 +331,7 @@
         </section>
         <hr class="m-0" />
 
+
         <section class="resume-section" id="research">
             <div class="resume-section-content">
                 <h2 class="mb-5">Research</h2>
@@ -380,164 +389,11 @@
         </section>
         <hr class="m-0" />
 
-        <section class="resume-section" id="advising">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Teaching and Advising</h2>
-
-                <h3 class="subsection-heading" style="margin-top:0;">Teaching</h3>
-                <div class="d-flex mb-2">
-                    <div class="flex-grow-1"><span><b>Energy Storage Systems and Materials</b> | Teaching Assistant | 44 graduate students</span></div>
-                    <div class="flex-shrink-0"><span>Fall 2024</span></div>
-                </div>
-
-                <div class="d-flex mb-5">
-                    <div class="flex-grow-1"><span><b><a href="http://coursecatalog.web.cmu.edu/schools-colleges/collegeofengineering/departmentofengineeringandpublicpolicy/courses/" target="_blank">Decision Making Methods for Engineers and Scientists</a></b> | Teaching Assistant + Substitute Lecturer | Prof. Paulina Jaramillo</span></div>
-                    <div class="flex-shrink-0"><span>Fall 2023</span></div>
-                </div>
-
-                <h3 class="subsection-heading">Curriculum &amp; Mentorship Initiatives</h3>
-                <div class="card-grid mb-5">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=MSE+GSAC" alt="MSE Graduate Student Advisory Committee" />
-                        <div class="card-title">MSE GSAC</div>
-                        <div class="card-subtitle">Materials Science &amp; Engineering Graduate Student Advisory Committee · 2022</div>
-                        <div class="card-desc">Co-led the creation of a student-run micro course for incoming PhD students from non-MSE backgrounds, bridging the gap between policy/engineering backgrounds and core materials science.</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Invisible+Curriculum" alt="Invisible Curriculum initiative" />
-                        <div class="card-title">Invisible Curriculum</div>
-                        <div class="card-subtitle">EPP initiative · Leading</div>
-                        <div class="card-desc">Building a student-led program on the things PhD students need but rarely get taught in the classroom: literature reviews, journal publication, personal websites, navigating university structures, and the unspoken expectations of academic life.</div>
-                    </div>
-                </div>
-
-                <h3 class="subsection-heading">Advising</h3>
-
-                <div class="card-grid">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
-                        <div class="card-title">Aeka Chatra</div>
-                        <div class="card-subtitle">Undergraduate Mechanical Engineering, Capstone</div>
-                        <div class="card-meta">Spring – Summer 2025</div>
-                        <div class="card-desc">"Impact of Heterogeneity in Electric Vehicle Fast Charging Profiles on Queuing and Grid Load"</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
-                        <div class="card-title">Mohit Karangutkar</div>
-                        <div class="card-subtitle">Masters Student, Engineering and Public Policy</div>
-                        <div class="card-meta">Summer 2025</div>
-                        <div class="card-desc">"Electric Vehicle Battery Warranties Over Time: A U.S. Analysis"</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
-                        <div class="card-title">Swastik Kushagr &amp; Rishi Wadgaonkar</div>
-                        <div class="card-subtitle">Energy Systems and Materials, Graduate Project</div>
-                        <div class="card-meta">Fall 2025</div>
-                        <div class="card-desc">"Degradation Mechanisms in Fast-Charged NCA Lithium-Ion Batteries: Insights from Incremental Capacity Analysis"</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
-                        <div class="card-title">Quantitative Entrepreneurship Team</div>
-                        <div class="card-subtitle">M. Rizwan, V. Sayanwisuttikam, R. F. Rahmi, W. Martinez Diaz, R. Chaplot</div>
-                        <div class="card-meta">Spring 2025</div>
-                        <div class="card-desc">"EV Battery Anode for High-Speed Charging: a Process Based Cost Model Analysis"</div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <section class="resume-section" id="affiliations">
-            <div class="resume-section-content">
-                <h2 class="mb-3">Community &amp; Service</h2>
-                <p class="lead mb-5" style="font-size: 1.1rem;">
-                    The groups that shaped how I think, and the roles I took on to give back.
-                </p>
-
-                <h3 class="subsection-heading" style="margin-top:0;">Community</h3>
-                <div class="card-grid mb-5">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/16-whitacre-mad-mex.jpg" alt="Whitacre Lab group photo" />
-                        <div class="card-title">Whitacre Lab</div>
-                        <div class="card-subtitle">PhD home — advised by Prof. Jay Whitacre</div>
-                        <div class="card-desc">Where I learned to think about batteries as systems, not just chemistries. The lab taught me that the most important question is often "what does this mean for someone trying to make a real product" — and that the bench and the spreadsheet need to talk to each other. <a href="https://www.cmu.edu/me/whitacre/" target="_blank">Lab site</a>.</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Michalek+Group" alt="Michalek Research Group" />
-                        <div class="card-title">Michalek Research Group</div>
-                        <div class="card-subtitle">PhD co-advisor — Prof. Jeremy Michalek</div>
-                        <div class="card-desc">Where I learned that a model is only as good as the decision it informs. The Design Decisions Lab gave me the techno-economic toolkit and the discipline to be honest about uncertainty — and the conviction that engineering analysis should be useful to people who aren't engineers. <a href="https://www.cmu.edu/me/ddl/" target="_blank">Lab site</a>.</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/08-epp-christmas-best.jpg" alt="Engineering and Public Policy department" />
-                        <div class="card-title">Engineering and Public Policy</div>
-                        <div class="card-subtitle">Home department, Carnegie Mellon</div>
-                        <div class="card-desc">EPP trains engineers to do policy work that's technically rigorous, and trains policy people to take engineering seriously. My cohort and the faculty here are the reason I'm comfortable in a regulator's office <i>and</i> in a lab. <a href="https://www.cmu.edu/epp/" target="_blank">Department site</a>.</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/19-gsa-larger-group-best.jpg" alt="CMU Graduate Student Assembly" style="object-position: center 35%;" />
-                        <div class="card-title">Graduate Student Assembly</div>
-                        <div class="card-subtitle">The people, not the resume line</div>
-                        <div class="card-desc">Some of the people I'm proudest to have worked with at CMU. Running GSA gave me a team of strong, opinionated graduate student leaders across every college, and we figured out how to actually move things together. Also where I learned that institutional change is slow, and worth it.</div>
-                    </div>
-                </div>
-
-                <h3 class="subsection-heading">Service</h3>
-                <p class="mb-4" style="color: #495057;">
-                    Roles, accomplishments, and committee work across graduate student governance and university affairs.
-                </p>
-
-                <div class="card-grid mb-5">
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/18-gsa-group-with-logo.jpg" alt="GSA roles" />
-                        <div class="card-title">GSA — President, VP, EPP Rep</div>
-                        <div class="card-subtitle">Sep 2021 – May 2024</div>
-                        <div class="card-desc">As President (Dec 2022 – May 2024), oversaw a team of 8 and ~$1M annual budget for 7,000 grad students. Established the Doctoral Stipend Annual Review Committee, secured Parental Accommodations for non-birthing parents, raised the minimum PhD stipend, and launched the Professional Development Grant fund. Previously VP Campus Affairs (Apr – Dec 2022) and EPP Rep (Sep 2021 – Apr 2022; Representative Award, Fall 2021).</div>
-                    </div>
-
-                    <div class="grid-card">
-                        <img class="card-thumb" src="assets/img/25-cvc-subway-advocacy.jpg" alt="External Advocacy Committee" />
-                        <div class="card-title">External Advocacy Committee</div>
-                        <div class="card-subtitle">Member, GSA · Sep 2021 – Present</div>
-                        <div class="card-desc">Travelled to DC to meet 30+ House and Senate offices (2021, 2022, 2024, 2025) and to Harrisburg, PA (2024, 2025). Advocated for graduate student mental health, food security, immigration, and federal research funding.</div>
-                    </div>
-
-                </div>
-
-                <h3 class="subsection-heading">University Service</h3>
-                <div class="service-block">
-                    <img src="assets/img/30-convocation-stage.jpg" alt="On stage at CMU convocation in graduation regalia" />
-                    <ul>
-                        <li>Search Advisory Committee for EPP Department Head <span class="svc-meta">(2025)</span></li>
-                        <li>Co-Chair, Provost Graduate Advisory Board <span class="svc-meta">(2022 – 2024)</span></li>
-                        <li>Co-Chair, Student Government Executive Council <span class="svc-meta">(2022 – 2024)</span></li>
-                        <li>Member (Student Rep), CMU Faculty Senate <span class="svc-meta">(2022 – 2024)</span></li>
-                        <li>Member, University Leadership Student Advisory Council (ULSAC) <span class="svc-meta">(2022 – 2024)</span></li>
-                        <li>Co-Host, President's Dinner — Annual GSA Dinner <span class="svc-meta">(2022 – 2024)</span></li>
-                        <li>Search Advisory Committee for Assistant Vice Provost for Student Affairs <span class="svc-meta">(2023)</span></li>
-                        <li>CMU Board of Trustees — Educational Affairs and Enrollment Committee <span class="svc-meta">(2023)</span></li>
-                        <li>Member, Design Review Committee <span class="svc-meta">(2022 – 2023)</span></li>
-                        <li>Member, Sustainability Committee <span class="svc-meta">(2022)</span></li>
-                        <li>Member, Public Art Committee <span class="svc-meta">(2022)</span></li>
-                        <li>Search Advisory Committee for Chief of Police <span class="svc-meta">(2022)</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
 
         
         <section class="resume-section" id="education">
             <div class="resume-section-content">
-                <h2 class="mb-3">Education + Lab Experience</h2>
+                <h2 class="mb-3">Training</h2>
                 <p class="lead mb-5" style="font-size: 1.1rem;">
                     Each degree paired with the research that went with it. Full chronology is on the <a href="assets/files/H_Morin_CV.pdf" target="_blank">CV</a>.
                 </p>
@@ -634,58 +490,188 @@
         </section>
         <hr class="m-0" />
 
-        <section class="resume-section" id="writing">
-            <div class="resume-section-content">
-                <h2 class="mb-3">Writing &amp; Code</h2>
-                <p class="lead mb-4" style="font-size: 1.1rem;">
-                    Public-facing code and data from my research.
-                </p>
 
-                <ul class="fa-ul mb-0" style="font-size: 1rem;">
-                    <li style="margin: 0 0 0.85em 0;">
-                        <b><a href="https://github.com/hannah-morin" target="_blank">GitHub</a></b> — code from my research, currently sparse. Cleaning up specific repos for public release alongside paper publications.
-                    </li>
-                    <li style="margin: 0 0 0.85em 0;">
-                        <b>Figshare</b> — open datasets:
-                        <ul style="list-style-type: circle; margin-top: 0.4em;">
-                            <li><a href="https://figshare.com/articles/dataset/Quantifying_the_Degradation_Cost_of_Frequent_Fast_Charging_Across_Multiple_Electric_Vehicle_Battery_Chemistries/28811366" target="_blank">JPS 2025 — Degradation cost dataset</a></li>
-                            <li><a href="https://figshare.com/articles/dataset/Digitized_Electric_Vehicle_Fast-Charging_Profiles_by_Model_Power_vs_SOC_SOE_CSV_Format_Version_1/30570653" target="_blank">JPS 2025 — Digitized EV fast-charging profiles</a></li>
-                        </ul>
-                    </li>
-                    <li style="margin: 0 0 0.85em 0;">
-                        <b>Substack</b> — coming soon. Plans for writing on batteries, EVs, and the messy work of decarbonization, for smart people who don't have a PhD in electrochemistry.
-                    </li>
-                </ul>
+        <section class="resume-section" id="advising">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Teaching and Advising</h2>
+
+                <h3 class="subsection-heading" style="margin-top:0;">Teaching</h3>
+                <div class="d-flex mb-2">
+                    <div class="flex-grow-1"><span><b>Energy Storage Systems and Materials</b> | Teaching Assistant | 44 graduate students</span></div>
+                    <div class="flex-shrink-0"><span>Fall 2024</span></div>
+                </div>
+
+                <div class="d-flex mb-5">
+                    <div class="flex-grow-1"><span><b><a href="http://coursecatalog.web.cmu.edu/schools-colleges/collegeofengineering/departmentofengineeringandpublicpolicy/courses/" target="_blank">Decision Making Methods for Engineers and Scientists</a></b> | Teaching Assistant + Substitute Lecturer | Prof. Paulina Jaramillo</span></div>
+                    <div class="flex-shrink-0"><span>Fall 2023</span></div>
+                </div>
+
+                <h3 class="subsection-heading">Curriculum &amp; Mentorship Initiatives</h3>
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=MSE+GSAC" alt="MSE Graduate Student Advisory Committee" />
+                        <div class="card-title">MSE GSAC</div>
+                        <div class="card-subtitle">Materials Science &amp; Engineering Graduate Student Advisory Committee · 2022</div>
+                        <div class="card-desc">Co-led the creation of a student-run micro course for incoming PhD students from non-MSE backgrounds, bridging the gap between policy/engineering backgrounds and core materials science.</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Invisible+Curriculum" alt="Invisible Curriculum initiative" />
+                        <div class="card-title">Invisible Curriculum</div>
+                        <div class="card-subtitle">EPP initiative · Leading</div>
+                        <div class="card-desc">Building a student-led program on the things PhD students need but rarely get taught in the classroom: literature reviews, journal publication, personal websites, navigating university structures, and the unspoken expectations of academic life.</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-heading">Advising</h3>
+
+                <div class="card-grid">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Aeka Chatra</div>
+                        <div class="card-subtitle">Undergraduate Mechanical Engineering, Capstone</div>
+                        <div class="card-meta">Spring – Summer 2025</div>
+                        <div class="card-desc">"Impact of Heterogeneity in Electric Vehicle Fast Charging Profiles on Queuing and Grid Load"</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Mohit Karangutkar</div>
+                        <div class="card-subtitle">Masters Student, Engineering and Public Policy</div>
+                        <div class="card-meta">Summer 2025</div>
+                        <div class="card-desc">"Electric Vehicle Battery Warranties Over Time: A U.S. Analysis"</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Swastik Kushagr &amp; Rishi Wadgaonkar</div>
+                        <div class="card-subtitle">Energy Systems and Materials, Graduate Project</div>
+                        <div class="card-meta">Fall 2025</div>
+                        <div class="card-desc">"Degradation Mechanisms in Fast-Charged NCA Lithium-Ion Batteries: Insights from Incremental Capacity Analysis"</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="https://placehold.co/400x400/588157/ffffff?text=Project" alt="Project thumbnail" />
+                        <div class="card-title">Quantitative Entrepreneurship Team</div>
+                        <div class="card-subtitle">M. Rizwan, V. Sayanwisuttikam, R. F. Rahmi, W. Martinez Diaz, R. Chaplot</div>
+                        <div class="card-meta">Spring 2025</div>
+                        <div class="card-desc">"EV Battery Anode for High-Speed Charging: a Process Based Cost Model Analysis"</div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <hr class="m-0" />
+
+
+        <section class="resume-section" id="affiliations">
+            <div class="resume-section-content">
+                <h2 class="mb-3">Community &amp; Service</h2>
+                <p class="lead mb-5" style="font-size: 1.1rem;">
+                    The groups that shaped how I think, and the roles I took on to give back.
+                </p>
+
+                <h3 class="subsection-heading" style="margin-top:0;">Community</h3>
+                <div class="row-card-list mb-5">
+                    <div class="row-card row-card-right">
+                        <div>
+                            <div class="row-card-title">Whitacre Lab</div>
+                            <div class="row-card-subtitle">PhD home — advised by Prof. Jay Whitacre</div>
+                            <div class="row-card-desc">Where I learned to think about batteries as systems, not just chemistries. The lab taught me that the most important question is often "what does this mean for someone trying to make a real product" — and that the bench and the spreadsheet need to talk to each other. <a href="https://www.cmu.edu/me/whitacre/" target="_blank">Lab site</a>.</div>
+                        </div>
+                        <img src="assets/img/16-whitacre-mad-mex.jpg" alt="Whitacre Lab group photo" />
+                    </div>
+                    <div class="row-card row-card-right">
+                        <div>
+                            <div class="row-card-title">Michalek Research Group</div>
+                            <div class="row-card-subtitle">PhD co-advisor — Prof. Jeremy Michalek</div>
+                            <div class="row-card-desc">Where I learned that a model is only as good as the decision it informs. The Design Decisions Lab gave me the techno-economic toolkit and the discipline to be honest about uncertainty — and the conviction that engineering analysis should be useful to people who aren't engineers. <a href="https://www.cmu.edu/me/ddl/" target="_blank">Lab site</a>.</div>
+                        </div>
+                        <img src="https://placehold.co/400x400/588157/ffffff?text=Michalek" alt="Michalek Research Group" />
+                    </div>
+                    <div class="row-card row-card-right">
+                        <div>
+                            <div class="row-card-title">Engineering and Public Policy</div>
+                            <div class="row-card-subtitle">Home department, Carnegie Mellon</div>
+                            <div class="row-card-desc">EPP trains engineers to do policy work that's technically rigorous, and trains policy people to take engineering seriously. My cohort and the faculty here are the reason I'm comfortable in a regulator's office <i>and</i> in a lab. <a href="https://www.cmu.edu/epp/" target="_blank">Department site</a>.</div>
+                        </div>
+                        <img src="assets/img/08-epp-christmas-best.jpg" alt="Engineering and Public Policy department" />
+                    </div>
+                    <div class="row-card row-card-right">
+                        <div>
+                            <div class="row-card-title">Graduate Student Assembly</div>
+                            <div class="row-card-subtitle">The people, not the resume line</div>
+                            <div class="row-card-desc">Some of the people I'm proudest to have worked with at CMU. Running GSA gave me a team of strong, opinionated graduate student leaders across every college, and we figured out how to actually move things together. Also where I learned that institutional change is slow, and worth it.</div>
+                        </div>
+                        <img src="assets/img/19-gsa-larger-group-best.jpg" alt="CMU Graduate Student Assembly" style="object-position: center 35%;" />
+                    </div>
+                </div>
+
+                <h3 class="subsection-heading">Service</h3>
+                <p class="mb-4" style="color: #495057;">
+                    Roles, accomplishments, and committee work across graduate student governance and university affairs.
+                </p>
+
+                <div class="card-grid mb-5">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/18-gsa-group-with-logo.jpg" alt="GSA roles" />
+                        <div class="card-title">GSA — President, VP, EPP Rep</div>
+                        <div class="card-subtitle">Sep 2021 – May 2024</div>
+                        <div class="card-desc">As President (Dec 2022 – May 2024), oversaw a team of 8 and ~$1M annual budget for 7,000 grad students. Established the Doctoral Stipend Annual Review Committee, secured Parental Accommodations for non-birthing parents, raised the minimum PhD stipend, and launched the Professional Development Grant fund. Previously VP Campus Affairs (Apr – Dec 2022) and EPP Rep (Sep 2021 – Apr 2022; Representative Award, Fall 2021).</div>
+                    </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/25-cvc-subway-advocacy.jpg" alt="External Advocacy Committee" />
+                        <div class="card-title">External Advocacy Committee</div>
+                        <div class="card-subtitle">Member, GSA · Sep 2021 – Present</div>
+                        <div class="card-desc">Travelled to DC to meet 30+ House and Senate offices (2021, 2022, 2024, 2025) and to Harrisburg, PA (2024, 2025). Advocated for graduate student mental health, food security, immigration, and federal research funding.</div>
+                    </div>
+                </div>
+
+                <div class="service-block">
+                    <img src="assets/img/30-convocation-stage.jpg" alt="On stage at CMU convocation in graduation regalia" />
+                    <ul>
+                        <li>Search Advisory Committee for EPP Department Head <span class="svc-meta">(2025)</span></li>
+                        <li>Co-Chair, Provost Graduate Advisory Board <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Co-Chair, Student Government Executive Council <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Member (Student Rep), CMU Faculty Senate <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Member, University Leadership Student Advisory Council (ULSAC) <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Co-Host, President's Dinner — Annual GSA Dinner <span class="svc-meta">(2022 – 2024)</span></li>
+                        <li>Search Advisory Committee for Assistant Vice Provost for Student Affairs <span class="svc-meta">(2023)</span></li>
+                        <li>CMU Board of Trustees — Educational Affairs and Enrollment Committee <span class="svc-meta">(2023)</span></li>
+                        <li>Member, Design Review Committee <span class="svc-meta">(2022 – 2023)</span></li>
+                        <li>Member, Sustainability Committee <span class="svc-meta">(2022)</span></li>
+                        <li>Member, Public Art Committee <span class="svc-meta">(2022)</span></li>
+                        <li>Search Advisory Committee for Chief of Police <span class="svc-meta">(2022)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
 
         <section class="resume-section" id="hobbies">
             <div class="resume-section-content">
                 <h2 class="mb-5">Outside the Lab</h2>
                 <p class="mb-5">A few things outside of research.</p>
 
-                <div class="row-card-list">
-                    <div class="row-card">
-                        <img src="assets/img/28-cat-birthday.jpg" alt="My cats" />
-                        <div>
-                            <div class="row-card-title">Cats</div>
-                            <div class="row-card-desc">Two recent additions to the household. They supervise all writing, modeling, and renovation work — closely.</div>
-                        </div>
+                <div class="card-grid">
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/28-cat-birthday.jpg" alt="My cats" />
+                        <div class="card-title">Cats</div>
+                        <div class="card-desc">Two recent additions to the household. They supervise all writing, modeling, and renovation work — closely.</div>
                     </div>
-                    <div class="row-card">
-                        <div></div>
-                        <div>
-                            <div class="row-card-title">DIY</div>
-                            <div class="row-card-desc">Slowly turning the house into something that actually works. Currently re-tiling the kitchen backsplash.</div>
-                        </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/29-kitchen-diy.jpg" alt="Kitchen DIY renovation" />
+                        <div class="card-title">DIY</div>
+                        <div class="card-desc">Slowly turning the house into something that actually works. Currently re-tiling the kitchen backsplash.</div>
                     </div>
-                    <div class="row-card">
-                        <div></div>
-                        <div>
-                            <div class="row-card-title">Hiking</div>
-                            <div class="row-card-desc">Best place to think through a degradation model: somewhere outside, ideally with a view, ideally without cell service.</div>
-                        </div>
+
+                    <div class="grid-card">
+                        <img class="card-thumb" src="assets/img/14-hiking-foggy-cliff.jpg" alt="Hiking on a foggy cliff" />
+                        <div class="card-title">Hiking</div>
+                        <div class="card-desc">Best place to think through a degradation model: somewhere outside, ideally with a view, ideally without cell service.</div>
                     </div>
                 </div>
             </div>
